@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Project1Ecommerce.TestCase12EachPayment"/>
+      <class name="Project1Ecommerce.TestCase11CheckOut"/>
+      <class name="Project1Ecommerce.TestCase9Cart"/>
+      <class name="Project1Ecommerce.TestCase4SuccessEdit"/>
+      <class name="Project1Ecommerce.TestCase10UpdateQuantitiesRemoveItem"/>
+      <class name="Project1Ecommerce.TestCase13CouponCode"/>
+      <class name="Project1Ecommerce.TestCase7Details"/>
+      <class name="Project1Ecommerce.TestCase14OrdersRating"/>
+      <class name="Project1Ecommerce.TestCase6SearchFilter"/>
+      <class name="Project1Ecommerce.TestCase3LoginFails"/>
+      <class name="Project1Ecommerce.TestCase8RelevanceRating"/>
+      <class name="Project1Ecommerce.TestCase15CartwithoutLogin"/>
+      <class name="Project1Ecommerce.TestCase5Search"/>
+      <class name="Project1Ecommerce.TestCase2Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

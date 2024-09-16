@@ -1,0 +1,598 @@
+<html>
+<head>
+<title>TestNG:  EdgeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EdgeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/4</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 06 17:57:40 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>389 seconds (389499 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Project2Airline.TestCase15Payment.payment()'><b>payment</b><br>Test class: Project2Airline.TestCase15Payment<br/>
+<a href="#Output-2024275149" onClick='toggleBox("Output-2024275149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2024275149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2024275149">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sizeBase&quot;&gt;...&lt;/div&gt; is not clickable at point (855, 281). Other element would receive the click: &lt;h3 class=&quot;&quot;&gt;...&lt;/h3&gt;
+  (Session info: MicrosoftEdge=128.0.2739.63)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [35062eeca1ae37cb2ae0363fee55ba87, clickElement {id=f.1854F7471CF9E644E11FE889DE9EFB1F.d.8F8590F9EE8AC901E500EA37B96F79AC.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.63, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53079}, msedge: {msedgedriverVersion: 128.0.2739.63 (6ff765a876b3..., userDataDir: C:\Users\SURYA-~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53079/devtoo..., se:cdpVersion: 128.0.2739.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (35062eeca1ae37cb2ae0363fee55ba87)] -&gt; xpath: (//div[.=&apos;Skip seat selection&apos;])[2]]
+Session ID: 35062eeca1ae37cb2ae0363fee55ba87
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at elementAirLine.flightDetailPageAirline.skipSeatSelection(flightDetailPageAirline.java:181)
+	at Project2Airline.TestCase15Payment.payment(TestCase15Payment.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2024275149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2024275149'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sizeBase&quot;&gt;...&lt;/div&gt; is not clickable at point (855, 281). Other element would receive the click: &lt;h3 class=&quot;&quot;&gt;...&lt;/h3&gt;
+  (Session info: MicrosoftEdge=128.0.2739.63)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [35062eeca1ae37cb2ae0363fee55ba87, clickElement {id=f.1854F7471CF9E644E11FE889DE9EFB1F.d.8F8590F9EE8AC901E500EA37B96F79AC.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.63, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53079}, msedge: {msedgedriverVersion: 128.0.2739.63 (6ff765a876b3..., userDataDir: C:\Users\SURYA-~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53079/devtoo..., se:cdpVersion: 128.0.2739.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (35062eeca1ae37cb2ae0363fee55ba87)] -&gt; xpath: (//div[.=&apos;Skip seat selection&apos;])[2]]
+Session ID: 35062eeca1ae37cb2ae0363fee55ba87
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at elementAirLine.flightDetailPageAirline.skipSeatSelection(flightDetailPageAirline.java:181)
+	at Project2Airline.TestCase15Payment.payment(TestCase15Payment.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>23</td>
+<td>Project2Airline.TestCase15Payment@5fbe4146</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Project2Airline.TestCase12LoginSearchLogout.loginsearchlogout()'><b>loginsearchlogout</b><br>Test class: Project2Airline.TestCase12LoginSearchLogout<br/>
+<a href="#Output-883636619" onClick='toggleBox("Output-883636619", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-883636619" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-883636619">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>Project2Airline.TestCase12LoginSearchLogout@79d8407f</td></tr>
+<tr>
+<td title='Project2Airline.TestCase13AppliedCoupon.appliedCoupon()'><b>appliedCoupon</b><br>Test class: Project2Airline.TestCase13AppliedCoupon<br/>
+<a href="#Output-1161441528" onClick='toggleBox("Output-1161441528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1161441528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1161441528">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Project2Airline.TestCase13AppliedCoupon@609cd4d8</td></tr>
+<tr>
+<td title='Project2Airline.TestCase6DiffClasses.diffClasses()'><b>diffClasses</b><br>Test class: Project2Airline.TestCase6DiffClasses<br/>
+<a href="#Output-791974256" onClick='toggleBox("Output-791974256", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-791974256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-791974256">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Project2Airline.TestCase6DiffClasses@58a9760d</td></tr>
+<tr>
+<td title='Project2Airline.TestCase5RoundTrip.roundTrip()'><b>roundTrip</b><br>Test class: Project2Airline.TestCase5RoundTrip<br/>
+<a href="#Output-233048737" onClick='toggleBox("Output-233048737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-233048737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-233048737">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Project2Airline.TestCase5RoundTrip@13b6aecc</td></tr>
+<tr>
+<td title='Project2Airline.TestCase11EveryTextField.everyTestField()'><b>everyTestField</b><br>Test class: Project2Airline.TestCase11EveryTextField<br/>
+<a href="#Output-1487465071" onClick='toggleBox("Output-1487465071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1487465071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487465071">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Project2Airline.TestCase11EveryTextField@bccb269</td></tr>
+<tr>
+<td title='Project2Airline.TestCase2Login.loginflight()'><b>loginflight</b><br>Test class: Project2Airline.TestCase2Login<br/>
+<a href="#Output-1712524347" onClick='toggleBox("Output-1712524347", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1712524347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1712524347">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Project2Airline.TestCase2Login@7d8704ef</td></tr>
+<tr>
+<td title='Project2Airline.TestCase10FlightInfoDisplay.flightInfoDetails()'><b>flightInfoDetails</b><br>Test class: Project2Airline.TestCase10FlightInfoDisplay<br/>
+<a href="#Output-1371550829" onClick='toggleBox("Output-1371550829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1371550829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1371550829">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Project2Airline.TestCase10FlightInfoDisplay@4e50c791</td></tr>
+<tr>
+<td title='Project2Airline.TestCase8SeatSelection.seatSelection()'><b>seatSelection</b><br>Test class: Project2Airline.TestCase8SeatSelection<br/>
+<a href="#Output-1976096999" onClick='toggleBox("Output-1976096999", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1976096999" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1976096999">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Project2Airline.TestCase8SeatSelection@17f7cd29</td></tr>
+<tr>
+<td title='Project2Airline.TestCase9MultiplePassengers.multiplePassengers()'><b>multiplePassengers</b><br>Test class: Project2Airline.TestCase9MultiplePassengers<br/>
+<a href="#Output-838139333" onClick='toggleBox("Output-838139333", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-838139333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-838139333">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>Project2Airline.TestCase9MultiplePassengers@1e66f1f5</td></tr>
+<tr>
+<td title='Project2Airline.TestCase3LoginFail.loginfail()'><b>loginfail</b><br>Test class: Project2Airline.TestCase3LoginFail<br/>
+<a href="#Output-926498219" onClick='toggleBox("Output-926498219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-926498219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-926498219">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Project2Airline.TestCase3LoginFail@3c3d9b6b</td></tr>
+<tr>
+<td title='Project2Airline.TestCase4OneWay.oneWayFlight()'><b>oneWayFlight</b><br>Test class: Project2Airline.TestCase4OneWay<br/>
+<a href="#Output-1410669831" onClick='toggleBox("Output-1410669831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1410669831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1410669831">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Project2Airline.TestCase4OneWay@7530ad9c</td></tr>
+<tr>
+<td title='Project2Airline.TestCase14DomesticSearch.domesticSearch()'><b>domesticSearch</b><br>Test class: Project2Airline.TestCase14DomesticSearch<br/>
+<a href="#Output-1230977381" onClick='toggleBox("Output-1230977381", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1230977381" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1230977381">
+TestCASE is Passed, Check Screenshots for better INFO<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Project2Airline.TestCase14DomesticSearch@158a8276</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Project2Airline.TestCase15Payment.payment()'><b>payment</b><br>Test class: Project2Airline.TestCase15Payment</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sizeBase&quot;&gt;...&lt;/div&gt; is not clickable at point (855, 281). Other element would receive the click: &lt;h3 class=&quot;&quot;&gt;...&lt;/h3&gt;
+  (Session info: MicrosoftEdge=128.0.2739.63)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3938cdc25bdadf6e3e8467114f3b4067, clickElement {id=f.8EFA069F3AC560E1C68358004E5B7D9D.d.4DDCF6870EDC8C092A03D605678EE880.e.206}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.63, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52849}, msedge: {msedgedriverVersion: 128.0.2739.63 (6ff765a876b3..., userDataDir: C:\Users\SURYA-~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52849/devtoo..., se:cdpVersion: 128.0.2739.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3938cdc25bdadf6e3e8467114f3b4067)] -&gt; xpath: (//div[.=&apos;Skip seat selection&apos;])[2]]
+Session ID: 3938cdc25bdadf6e3e8467114f3b4067
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at elementAirLine.flightDetailPageAirline.skipSeatSelection(flightDetailPageAirline.java:181)
+	at Project2Airline.TestCase15Payment.payment(TestCase15Payment.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798373155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1798373155'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sizeBase&quot;&gt;...&lt;/div&gt; is not clickable at point (855, 281). Other element would receive the click: &lt;h3 class=&quot;&quot;&gt;...&lt;/h3&gt;
+  (Session info: MicrosoftEdge=128.0.2739.63)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3938cdc25bdadf6e3e8467114f3b4067, clickElement {id=f.8EFA069F3AC560E1C68358004E5B7D9D.d.4DDCF6870EDC8C092A03D605678EE880.e.206}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.63, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52849}, msedge: {msedgedriverVersion: 128.0.2739.63 (6ff765a876b3..., userDataDir: C:\Users\SURYA-~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52849/devtoo..., se:cdpVersion: 128.0.2739.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (3938cdc25bdadf6e3e8467114f3b4067)] -&gt; xpath: (//div[.=&apos;Skip seat selection&apos;])[2]]
+Session ID: 3938cdc25bdadf6e3e8467114f3b4067
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at elementAirLine.flightDetailPageAirline.skipSeatSelection(flightDetailPageAirline.java:181)
+	at Project2Airline.TestCase15Payment.payment(TestCase15Payment.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>24</td>
+<td>Project2Airline.TestCase15Payment@5fbe4146</td></tr>
+<tr>
+<td title='Project2Airline.TestCase15Payment.payment()'><b>payment</b><br>Test class: Project2Airline.TestCase15Payment</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sizeBase&quot;&gt;...&lt;/div&gt; is not clickable at point (855, 281). Other element would receive the click: &lt;h3 class=&quot;&quot;&gt;...&lt;/h3&gt;
+  (Session info: MicrosoftEdge=128.0.2739.63)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [605bf30664f5d9f41506bfb1fc078f27, clickElement {id=f.C3DFEC5610E93891776C9E8193DED276.d.AB693B97FEF1B8C08B6DA6C4786507F9.e.204}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.63, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52968}, msedge: {msedgedriverVersion: 128.0.2739.63 (6ff765a876b3..., userDataDir: C:\Users\SURYA-~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52968/devtoo..., se:cdpVersion: 128.0.2739.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (605bf30664f5d9f41506bfb1fc078f27)] -&gt; xpath: (//div[.=&apos;Skip seat selection&apos;])[2]]
+Session ID: 605bf30664f5d9f41506bfb1fc078f27
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at elementAirLine.flightDetailPageAirline.skipSeatSelection(flightDetailPageAirline.java:181)
+	at Project2Airline.TestCase15Payment.payment(TestCase15Payment.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace353562601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace353562601'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sizeBase&quot;&gt;...&lt;/div&gt; is not clickable at point (855, 281). Other element would receive the click: &lt;h3 class=&quot;&quot;&gt;...&lt;/h3&gt;
+  (Session info: MicrosoftEdge=128.0.2739.63)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [605bf30664f5d9f41506bfb1fc078f27, clickElement {id=f.C3DFEC5610E93891776C9E8193DED276.d.AB693B97FEF1B8C08B6DA6C4786507F9.e.204}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.63, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52968}, msedge: {msedgedriverVersion: 128.0.2739.63 (6ff765a876b3..., userDataDir: C:\Users\SURYA-~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52968/devtoo..., se:cdpVersion: 128.0.2739.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (605bf30664f5d9f41506bfb1fc078f27)] -&gt; xpath: (//div[.=&apos;Skip seat selection&apos;])[2]]
+Session ID: 605bf30664f5d9f41506bfb1fc078f27
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at elementAirLine.flightDetailPageAirline.skipSeatSelection(flightDetailPageAirline.java:181)
+	at Project2Airline.TestCase15Payment.payment(TestCase15Payment.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>22</td>
+<td>Project2Airline.TestCase15Payment@5fbe4146</td></tr>
+<tr>
+<td title='Project2Airline.TestCase2Login.loginflight()'><b>loginflight</b><br>Test class: Project2Airline.TestCase2Login</td>
+<td><div><pre>java.lang.AssertionError: Sorry, the title didn&apos;t match expected [Flight Bookings on Amazon] but found [Amazon Sign In]
+	at Project2Airline.TestCase2Login.loginflight(TestCase2Login.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace308976247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace308976247'><pre>java.lang.AssertionError: Sorry, the title didn&apos;t match expected [Flight Bookings on Amazon] but found [Amazon Sign In]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at Project2Airline.TestCase2Login.loginflight(TestCase2Login.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>Project2Airline.TestCase2Login@7d8704ef</td></tr>
+<tr>
+<td title='Project2Airline.TestCase2Login.loginflight()'><b>loginflight</b><br>Test class: Project2Airline.TestCase2Login</td>
+<td><div><pre>java.lang.AssertionError: Sorry, the title didn&apos;t match expected [Flight Bookings on Amazon] but found [Amazon Sign In]
+	at Project2Airline.TestCase2Login.loginflight(TestCase2Login.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1002690318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1002690318'><pre>java.lang.AssertionError: Sorry, the title didn&apos;t match expected [Flight Bookings on Amazon] but found [Amazon Sign In]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at Project2Airline.TestCase2Login.loginflight(TestCase2Login.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>Project2Airline.TestCase2Login@7d8704ef</td></tr>
+</table><p>
+</body>
+</html>

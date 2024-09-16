@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="ChromeTest">
+	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="Project2Airline.TestCase11EveryTextField"/>
+      <class name="Project2Airline.TestCase13AppliedCoupon"/>
+      <class name="Project2Airline.TestCase8SeatSelection"/>
+      <class name="Project2Airline.TestCase2Login"/>
+      <class name="Project2Airline.TestCase5RoundTrip"/>
+      <class name="Project2Airline.TestCase14DomesticSearch"/>
+      <class name="Project2Airline.TestCase3LoginFail"/>
+      <class name="Project2Airline.TestCase12LoginSearchLogout"/>
+      <class name="Project2Airline.TestCase9MultiplePassengers"/>
+      <class name="Project2Airline.TestCase10FlightInfoDisplay"/>
+      <class name="Project2Airline.TestCase4OneWay"/>
+      <class name="Project2Airline.TestCase6DiffClasses"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
